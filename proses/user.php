@@ -108,7 +108,7 @@
           
 
 
-          <button type="submit" class="btn btn-primary">TAMBAH</button>
+          <button type="submit" class="btn btn-primary" name="upload">TAMBAH</button>
         </form>
         </div>
 

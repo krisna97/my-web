@@ -19,7 +19,7 @@
             <input type="password" class="form-control" name="pass">
           </div>
 
-          <button type="submit" class="btn btn-primary">Daftar</button>
+          <button type="submit" class="btn btn-primary" name="submit">Daftar</button>
         </form>
         </div>
 <?php

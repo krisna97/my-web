@@ -4,7 +4,7 @@
 	
 	$id_nilai = $_GET['user'] ;
 	
-	$sql_delete = "DELETE FROM `user`" ;
+	$sql_delete = "DELETE FROM `user` where `idUser`='{$id_nilai}'" ;
 	
 	$query_delete = mysqli_query($konek,$sql_delete) ; ;
 	

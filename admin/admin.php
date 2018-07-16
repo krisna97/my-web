@@ -73,19 +73,20 @@
 <h1>Daftar User</h1>
 <table border="1" class="table table-bordered">
   <tr>
-    <th>USER</th> <th>EMAIL</th><th>PASSWORD</th>
+    <th>ID</th></th><th>USER</th> <th>EMAIL</th><th>PASSWORD</th>
     <th> OPERASI </th>
   </tr>
   <?php
   while($row_user = mysqli_fetch_assoc($query_select) ) {
     ?>
     <tr>
+      <td><?php echo $row_user['idUser'] ?></td> 
       <td><?php echo $row_user['user'] ?></td> 
       <td><?php echo $row_user['email'] ?></td> 
       <td><?php echo $row_user['pass'] ?></td> 
       <td>
-       <button type="button" class="btn"> <a href="updateUser.php?user=<?php echo $row_user['user'] ?>"> Update </a> </button> |
-       <button type="button" class="btn btn-danger"> <a href="deleteUser.php?user=<?php echo $row_user['user'] ?>"> Delete </a> </button>
+       <a href="updateUser.php?user=<?php echo $row_user['idUser'] ?>"> Update </a> 
+       <a href="deleteUser.php?user=<?php echo $row_user['idUser'] ?>"> Delete </a> 
       </td>
     </tr>
     <?php

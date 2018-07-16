@@ -7,7 +7,7 @@
 	include("config/koneksi.php") ;
 	$idUser = $_GET['user'] ;
 	
-	$sql_select_user = "SELECT  * FROM `user` WHERE `user`='{$idUser}'" ;
+	$sql_select_user = "SELECT  * FROM `user` WHERE `idUser`='{$idUser}'" ;
 	
 	$query_select_user = mysqli_query($konek,$sql_select_user) ;
 	
